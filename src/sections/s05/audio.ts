@@ -1,0 +1,65 @@
+import type { AudioTrack } from "../../config/audio";
+import { DESIGN } from "../../movie/design";
+
+export const SECTION05_TRACKS: AudioTrack[] = [
+  {
+    id: "s05-celebration",
+    kind: "bgm",
+    label: "拍手・歓声の軽快ジャズ",
+    src: "s05/celebration.wav",
+    startSec: 0,
+    durationSec: 9.9,
+    volume: DESIGN.audio.bgm,
+    fadeInSec: 0.3,
+    fadeOutSec: 0.8,
+    enabled: true,
+    placeholder: false,
+    note: "NumPyで合成したオリジナルの軽快な120BPM伴奏。ナレーションなし。",
+  },
+  {
+    id: "s05-applause",
+    kind: "sfx",
+    label: "拍手",
+    src: "s05/applause.wav",
+    startSec: 1.8,
+    durationSec: 4.8,
+    volume: DESIGN.audio.sfx,
+    fadeInSec: 0.15,
+    fadeOutSec: 0.5,
+    enabled: true,
+    placeholder: false,
+    note: "短いノイズバーストから合成したオリジナル拍手。",
+  },
+  {
+    id: "s05-cheer",
+    kind: "sfx",
+    label: "歓声の上昇音",
+    src: "s05/cheer.wav",
+    startSec: 5.45,
+    durationSec: 3.7,
+    volume: DESIGN.audio.sfx * 0.72,
+    fadeInSec: 0.15,
+    fadeOutSec: 0.7,
+    enabled: true,
+    placeholder: false,
+    note: "人声素材を使わず、明るい倍音群で歓声の高揚感を表現した自作音。",
+  },
+];
+
+export const SECTION05_TAIL_TRACKS: AudioTrack[] = [
+  {
+    id: "s05-celebration-tail",
+    kind: "bgm",
+    label: "拍手・歓声の軽快ジャズ余韻",
+    src: "s05/celebration.wav",
+    startSec: 0,
+    durationSec: 1.2,
+    trimBeforeSec: 8.8,
+    volume: DESIGN.audio.bgm,
+    fadeInSec: 0.1,
+    fadeOutSec: 0.55,
+    enabled: true,
+    placeholder: false,
+    note: "11秒尺の末尾まで同じ自作曲を自然につなぐための区間。",
+  },
+];

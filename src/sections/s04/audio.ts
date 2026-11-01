@@ -31,9 +31,9 @@ export const SECTION04_TRACKS: AudioTrack[] = [
     placeholder: false,
     note: "NumPyで合成したオリジナル120BPMピチカート。ナレーションなし。",
   },
-  shutter("s04-shutter-1", 93 / 30),
-  shutter("s04-shutter-2", 174 / 30),
-  shutter("s04-shutter-3", 252 / 30),
+  shutter("s04-shutter-1", 75 / 30),
+  shutter("s04-shutter-2", 165 / 30),
+  shutter("s04-shutter-3", 255 / 30),
 ];
 
 export const SECTION04_TAIL_TRACKS: AudioTrack[] = [

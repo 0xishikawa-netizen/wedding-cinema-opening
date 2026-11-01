@@ -18,8 +18,6 @@ import { HANDOFF, RELAY_TRACKS, relayDuck } from "../config/audioRelay";
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 
 const X = 1520, Y = 905, SCALE = 1.4;
-const FIRST_ID: CharacterId = "special02";
-const SECOND_ID: CharacterId = "special01";
 const FIRST: MotionOpts = { amp: 0.8, drunk: 0.8, phase: 1.7 };
 const SECOND: MotionOpts = { amp: 1.15, drunk: 1, phase: 0 };
 
@@ -28,7 +26,9 @@ const outScale = (f: number) => interpolate(f, [HANDOFF - 9, HANDOFF - 3], [1, 0
 const inScale = (f: number) => interpolate(f, [HANDOFF + 3, HANDOFF + 11], [0, 1], { ...clamp, easing: Easing.out(Easing.back(2)) });
 
 /** Relay: guest B opens (enter, toast, first sway); at the half-way point guest A swaps in, startles at the sub-title and bows. One at a time. */
-export const DrinkWarningRelayScene: React.FC = () => {
+export type RelayProps = { firstId?: CharacterId; secondId?: CharacterId; withSound?: boolean };
+export const DrinkWarningRelayScene: React.FC<RelayProps> = ({ firstId = "special02", secondId = "special01", withSound = true }) => {
+  const FIRST_ID = firstId, SECOND_ID = secondId;
   const frame = useCurrentFrame();
   const light = interpolate(frame, [0, 36], [0, 1], { ...clamp, easing: ease.soft });
   const zoom = 1 + CAMERA.maxZoom * interpolate(frame, [0, DURATION_FRAMES], [0, 1], { easing: ease.soft });
@@ -80,7 +80,7 @@ export const DrinkWarningRelayScene: React.FC = () => {
       <Grain frame={frame} />
       <AbsoluteFill style={{ background: "#000", opacity: interpolate(frame, [0, 4], [1, 0], clamp) }} />
       <AbsoluteFill style={{ background: "#fff3d6", opacity: endFade }} />
-      <SoundDesign tracks={RELAY_TRACKS} duck={relayDuck} />
+      {withSound && <SoundDesign tracks={RELAY_TRACKS} duck={relayDuck} />}
     </AbsoluteFill>
   );
 };

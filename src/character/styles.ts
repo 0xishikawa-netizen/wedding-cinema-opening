@@ -31,7 +31,17 @@ export const CHARACTERS = {
     age: 0.25, foreheadLines: 0, bags: false, cheekHollow: true, faceW: 0.96, faceH: 1.0, eyeGap: 1.04, eyeW: 0.95, eyeScale: 0.62, lidHeavy: 0.6,
     eyeYOff: 4, browThick: 6.5, browArchMul: 0.3, nose: "long", noseSize: 1, mouthW: 0.9, mouthYOff: 6, flatNormal: true, earSize: 1.05, accessory: "none", height: 1.06, build: 0.9,
   }),
-  // Same people, but the head is the (illustrated) reference photo itself — closest likeness.
+  // ---- Placeholder guests 01-10: anonymous, distinct looks. Replace a look (or point a slot at another id) in src/guests/guests.ts.
+  p01: make({ id: "p01", name: "ゲスト01", hair: "short", hairColor: "#2b1d14", suit: "#26304a", suitLight: "#3d4a6b", accent: "#c75b5b" }),
+  p02: make({ id: "p02", name: "ゲスト02", hair: "curly", hairColor: "#5a3a22", skin: "#e2b48c", skinShade: "#c48f66", accessory: "glasses", accent: "#2f7f6f" }),
+  p03: make({ id: "p03", name: "ゲスト03", hair: "bald", skin: "#d9a283", skinShade: "#b9805f", accessory: "mustache", suit: "#3b2a2a", suitLight: "#5a4242", build: 1.15, height: 0.96 }),
+  p04: make({ id: "p04", name: "ゲスト04", hair: "swept", hairColor: "#9a9490", accessory: "glasses", suit: "#3a3a3a", suitLight: "#58585c", accent: "#d49a2a", height: 1.04 }),
+  p05: make({ id: "p05", name: "ゲスト05", hair: "buzz", hairColor: "#1f1a18", skin: "#c9936c", skinShade: "#a87250", suit: "#1f2d2a", suitLight: "#364a45", accent: "#b84a7a", build: 1.1 }),
+  p06: make({ id: "p06", name: "ゲスト06", hair: "fade", hairColor: "#3a2a22", suit: "#4a2f3a", suitLight: "#6b4553", accent: "#3d6fb8", height: 1.02, build: 0.92 }),
+  p07: make({ id: "p07", name: "ゲスト07", hair: "short", hairColor: "#7a4a2a", skin: "#e8b998", skinShade: "#c99472", accessory: "both", height: 0.98 }),
+  p08: make({ id: "p08", name: "ゲスト08", hair: "curly", hairColor: "#1e1612", skin: "#b67f58", skinShade: "#966142", suit: "#2c3a52", suitLight: "#44587a", accent: "#e07a3c", build: 1.05 }),
+  p09: make({ id: "p09", name: "ゲスト09", hair: "swept", hairColor: "#c9b99a", skin: "#f6d4b4", skinShade: "#dfb18a", accessory: "glasses", suitLight: "#6a6474", accent: "#5aa07a", height: 1.05, build: 0.95 }),
+  p10: make({ id: "p10", name: "ゲスト10", hair: "short", hairColor: "#2f2a28", skin: "#dca57f", skinShade: "#bb835e", accessory: "mustache", accent: "#c04a4a", build: 1.2, height: 0.94 }),
 } as const;
 export type CharacterId = keyof typeof CHARACTERS;
 /** Characters drawn from specific people (traits read from reference photos, outfit unified with the others). */

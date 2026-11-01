@@ -7,6 +7,9 @@ import { S09_TRACKS } from "./audio";
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 const C = DESIGN.color;
 
+/** Entrance cue: frame (in this section) from which the picture is full bright ivory and the soundtrack is silent. Start the venue's entrance music here (= 90.0 s of Main90). */
+export const ENTRANCE_CUE_FRAME = 89;
+
 /** SECTION 09 — doors swing open onto warm light; hands over to the real entrance. Ends in bright ivory, never dark. */
 export const Section09: React.FC = () => {
   const frame = useCurrentFrame();

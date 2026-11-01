@@ -46,9 +46,15 @@ export const Section06: React.FC = () => {
         <div style={{ fontFamily: DESIGN.font.serif, fontSize: 150, fontWeight: 700, color: C.ink, marginTop: 14, textShadow: "0 6px 0 rgba(198,166,106,0.55)" }}>まもなく</div>
         <div style={{ fontFamily: DESIGN.font.serif, fontSize: 150, fontWeight: 700, color: C.wine, textShadow: "0 6px 0 rgba(198,166,106,0.55)" }}>本編スタート</div>
       </AbsoluteFill>
+      {showCount && (
+        <div style={{ position: "absolute", left: 0, right: 0, top: 205, textAlign: "center", fontFamily: DESIGN.font.serif, fontSize: 60, fontWeight: 700, color: C.wine, letterSpacing: 6, textShadow: "0 4px 0 rgba(198,166,106,0.6)", opacity: interpolate(frame, [57, 66], [0, 1], clamp) * interpolate(frame, [138, 147], [1, 0], clamp) }}>
+          新郎新婦の映画、上映まで
+        </div>
+      )}
       {showCount && <Leader frame={frame} />}
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", opacity: tag }}>
         <div style={{ fontFamily: DESIGN.font.serif, fontSize: 64, letterSpacing: 20, color: C.wine, textShadow: "0 4px 0 rgba(198,166,106,0.6)" }}>THE MOVIE BEGINS</div>
+        <div style={{ fontFamily: DESIGN.font.serif, fontSize: 52, fontWeight: 700, marginTop: 22, color: C.ink, letterSpacing: 4 }}>ふたりの物語、上映開始。</div>
       </AbsoluteFill>
       {/* letterbox bars: wine, warm — signals "trailer" without going dark */}
       <div style={{ position: "absolute", left: 0, right: 0, top: 0, height: 140 * bars, background: C.wine, boxShadow: `0 4px 0 ${C.gold}` }} />

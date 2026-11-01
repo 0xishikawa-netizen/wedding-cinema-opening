@@ -14,8 +14,8 @@ export const ENTRANCE_CUE_FRAME = 89;
 export const Section09: React.FC = () => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
-  const inFade = interpolate(frame, [0, 6], [0, 1], clamp);
-  const open = interpolate(frame, [4, 34], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  const inFade = interpolate(frame, [0, 12], [0, 1], clamp);
+  const open = interpolate(frame, [0, 32], [0.5, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
   const glow = interpolate(frame, [10, 44], [0.2, 1], clamp);
   const text = interpolate(frame, [28, 42], [0, 1], { ...clamp, easing: Easing.out(Easing.back(1.5)) });
   const end = interpolate(frame, [76, durationInFrames], [0, 1], { ...clamp, easing: Easing.in(Easing.quad) });

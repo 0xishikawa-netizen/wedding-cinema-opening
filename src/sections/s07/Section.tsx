@@ -236,7 +236,7 @@ const NamiChapter: React.FC<{frame: number}> = ({frame}) => {
       <div style={{transform: `translateX(${interpolate(p, [0, 1], [20, -10])}px)`}}>
         <PhotoFrame slot={PHOTO_SLOTS.nami} progress={p} label="NAMI" rotate={1.15} />
       </div>
-      <div style={{width: 840, textAlign: "right", transform: `translateX(${interpolate(copyIn, [0, 1], [-32, 0])}px)`, opacity: copyIn}}>
+      <div style={{width: 960, textAlign: "right", transform: `translateX(${interpolate(copyIn, [0, 1], [-32, 0])}px)`, opacity: copyIn}}>
         <div style={{fontFamily: DESIGN.font.sans, color: C.wine, fontSize: 25, fontWeight: 800, letterSpacing: 12}}>CHAPTER 02 / NAMI</div>
         <div style={{fontFamily: DESIGN.font.serif, color: C.ink, fontSize: 59, fontWeight: 700, lineHeight: 1.52, letterSpacing: 2, marginTop: 25}}>
           美味しいご飯とお酒があれば、<br />今日も最高。

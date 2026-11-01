@@ -32,8 +32,6 @@ export const CHARACTERS = {
     eyeYOff: 4, browThick: 6.5, browArchMul: 0.3, nose: "long", noseSize: 1, mouthW: 0.9, mouthYOff: 6, flatNormal: true, earSize: 1.05, accessory: "none", height: 1.06, build: 0.9,
   }),
   // Same people, but the head is the (illustrated) reference photo itself — closest likeness.
-  special01p: make({ id: "special01p", name: "ゲスト（写真A・写真顔）", skin: "#d9a283", skinShade: "#b9805f", faceShape: "round", faceW: 1.1, height: 0.95, build: 1.12, headImage: { src: "heads/special01_soft.png", x: -112, y: -590, w: 224, h: 282, rot: -6 } }),
-  special02p: make({ id: "special02p", name: "ゲスト（写真B・写真顔）", skin: "#ecc0a6", skinShade: "#cf9c80", faceShape: "long", height: 1.06, build: 0.9, headImage: { src: "heads/special02_soft.png", x: -100, y: -566, w: 200, h: 247 } }),
 } as const;
 export type CharacterId = keyof typeof CHARACTERS;
 /** Characters drawn from specific people (traits read from reference photos, outfit unified with the others). */

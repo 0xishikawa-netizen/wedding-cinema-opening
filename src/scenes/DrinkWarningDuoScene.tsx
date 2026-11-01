@@ -22,8 +22,8 @@ export type DuoSceneProps = { faceMode: FaceMode };
 type Member = { id: CharacterId; x: number; delay: number; opts: MotionOpts; fx: { dizzy: boolean; word: boolean } };
 const members = (mode: FaceMode): Member[] => [
   // B stands left and enters first; A is a little more tipsy and a beat behind
-  { id: mode === "photo" ? "special02p" : "special02", x: 1340, delay: 0, opts: { amp: 0.75, drunk: 0.8, phase: 1.7 }, fx: { dizzy: false, word: false } },
-  { id: mode === "photo" ? "special01p" : "special01", x: 1690, delay: 6, opts: { amp: 1.15, drunk: 1, phase: 0 }, fx: { dizzy: true, word: true } },
+  { id: "special02", x: 1340, delay: 0, opts: { amp: 0.75, drunk: 0.8, phase: 1.7 }, fx: { dizzy: false, word: false } },
+  { id: "special01", x: 1690, delay: 6, opts: { amp: 1.15, drunk: 1, phase: 0 }, fx: { dizzy: true, word: true } },
 ];
 const Y = 905, SCALE = 1.1;
 

@@ -10,6 +10,7 @@
   "private": true,
   "dependencies": {
     "@remotion/cli": "4.0.539",
+    "@remotion/media": "^4.0.539",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "remotion": "4.0.539"
@@ -26,7 +27,11 @@
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src && tsc",
+    "audio": "python3 scripts/gen_audio.py",
+    "render": "remotion render DrinkWarningV4 out/drink-warning-v4.mp4 --codec=h264 --crf=16",
+    "render:character": "remotion render DrinkWarningCharacterV1 out/drink-warning-character-v1.mp4 --codec=h264 --crf=16",
+    "sheet:character": "remotion still CharacterSheet review/drink-warning-character-sheet.png --frame=0"
   },
   "allowScripts": {
     "esbuild": false

@@ -1,0 +1,244 @@
+{
+  "canvas": {
+    "width": 1024,
+    "height": 1536
+  },
+  "coordinateSystem": "top-left pixel coordinates; anatomical right is viewer left; pivots are local displayed pixels",
+  "sourceImage": {
+    "width": 1024,
+    "height": 1536,
+    "file": "exec-53df12c7-1443-40ca-a39e-47de6fb20250.png"
+  },
+  "note": "Reconstructed parts placement in original-size canvas, not a pixel-identical reconstruction. Regenerated expression variants.",
+  "parts": {
+    "torso": {
+      "file": "assets/torso.png",
+      "sourceCrop": null,
+      "x": 290,
+      "y": 210,
+      "width": 380,
+      "height": 550,
+      "pivot": [
+        190,
+        500
+      ],
+      "z": 5
+    },
+    "arm_right": {
+      "file": "assets/arm_right.png",
+      "sourceCrop": [
+        554,
+        62,
+        300,
+        318
+      ],
+      "x": 235,
+      "y": 285,
+      "width": 285,
+      "height": 302,
+      "pivot": [
+        65,
+        35
+      ],
+      "z": 3
+    },
+    "arm_left": {
+      "file": "assets/arm_left.png",
+      "sourceCrop": [
+        918,
+        62,
+        163,
+        519
+      ],
+      "x": 595,
+      "y": 300,
+      "width": 155,
+      "height": 493,
+      "pivot": [
+        40,
+        30
+      ],
+      "z": 3
+    },
+    "arm_left_tie": {
+      "file": "assets/arm_left_tie.png",
+      "sourceCrop": [
+        1218,
+        64,
+        280,
+        282
+      ],
+      "x": 365,
+      "y": 235,
+      "width": 285,
+      "height": 287,
+      "pivot": [
+        245,
+        90
+      ],
+      "z": 3
+    },
+    "legs": {
+      "file": "assets/legs.png",
+      "sourceCrop": [
+        147,
+        521,
+        261,
+        480
+      ],
+      "x": 320,
+      "y": 715,
+      "width": 339,
+      "height": 624,
+      "pivot": [
+        170,
+        10
+      ],
+      "z": 1
+    },
+    "shoe_right": {
+      "file": "assets/shoe_right.png",
+      "sourceCrop": [
+        496,
+        786,
+        258,
+        174
+      ],
+      "x": 280,
+      "y": 1305,
+      "width": 210,
+      "height": 142,
+      "pivot": [
+        175,
+        20
+      ],
+      "z": 0
+    },
+    "shoe_left": {
+      "file": "assets/shoe_left.png",
+      "sourceCrop": [
+        886,
+        784,
+        211,
+        178
+      ],
+      "x": 535,
+      "y": 1310,
+      "width": 174,
+      "height": 147,
+      "pivot": [
+        55,
+        20
+      ],
+      "z": 0
+    },
+    "glass": {
+      "file": "assets/glass.png",
+      "sourceCrop": [
+        1276,
+        652,
+        121,
+        313
+      ],
+      "x": 450,
+      "y": 340,
+      "width": 65,
+      "height": 168,
+      "pivot": [
+        32,
+        115
+      ],
+      "z": 8
+    },
+    "head_default": {
+      "file": "assets/head_default.png",
+      "sourceCrop": [
+        360,
+        15,
+        185,
+        190
+      ],
+      "x": 365,
+      "y": 30,
+      "width": 185,
+      "height": 210,
+      "pivot": [
+        100,
+        195
+      ],
+      "z": 6
+    },
+    "head_side": {
+      "file": "assets/head_side.png",
+      "sourceCrop": [
+        275,
+        80,
+        680,
+        1060
+      ],
+      "x": 365,
+      "y": 5,
+      "width": 190,
+      "height": 260,
+      "pivot": [
+        100,
+        230
+      ],
+      "z": 6
+    },
+    "head_bow": {
+      "file": "assets/head_bow.png",
+      "sourceCrop": [
+        205,
+        30,
+        820,
+        1140
+      ],
+      "x": 365,
+      "y": 25,
+      "width": 195,
+      "height": 255,
+      "pivot": [
+        100,
+        205
+      ],
+      "z": 6
+    },
+    "arm_right_foreground": {
+      "file": "assets/arm_right_foreground.png",
+      "sourceCrop": [
+        554,
+        62,
+        300,
+        318
+      ],
+      "x": 235,
+      "y": 439.85,
+      "width": 285,
+      "height": 147.25,
+      "pivot": [
+        65,
+        -119.85
+      ],
+      "z": 6
+    },
+    "arm_left_tie_foreground": {
+      "file": "assets/arm_left_tie_foreground.png",
+      "sourceCrop": [
+        1218,
+        64,
+        280,
+        282
+      ],
+      "x": 365,
+      "y": 235,
+      "width": 198.48214285714286,
+      "height": 287,
+      "pivot": [
+        245,
+        90
+      ],
+      "z": 7
+    }
+  }
+}

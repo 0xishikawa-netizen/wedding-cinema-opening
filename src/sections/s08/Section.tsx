@@ -1,7 +1,8 @@
 import React from "react";
-import {AbsoluteFill, Easing, interpolate, useCurrentFrame, useVideoConfig} from "remotion";
+import {AbsoluteFill, Easing, interpolate, useCurrentFrame} from "remotion";
 import {SoundDesign} from "../../components/SoundDesign";
 import {DESIGN} from "../../movie/design";
+import {sectionById} from "../../movie/timeline";
 import {S08_TRACKS} from "./audio";
 
 const clamp = {extrapolateLeft: "clamp", extrapolateRight: "clamp"} as const;
@@ -17,7 +18,7 @@ const CONFETTI = [
 /** SECTION 08 — restrained gold title, a single light sweep, and a little confetti. */
 export const Section08: React.FC = () => {
   const frame = useCurrentFrame();
-  const {durationInFrames} = useVideoConfig();
+  const durationInFrames = sectionById("s08").frames;
   const titleIn = interpolate(frame, [8, 30], [0, 1], {...clamp, easing: ease});
   const titleScale = interpolate(frame, [8, 34], [0.92, 1], {...clamp, easing: Easing.out(Easing.back(1.35))});
   const tracking = interpolate(frame, [8, 36], [25, 10], {...clamp, easing: ease});
@@ -77,7 +78,9 @@ export const Section08: React.FC = () => {
               lineHeight: 1,
               letterSpacing: tracking,
               color: DESIGN.color.gold,
-              textShadow: `0 4px 0 ${DESIGN.color.paper}, 0 16px 38px ${DESIGN.color.champagne}`,
+              WebkitTextStroke: `1.5px ${DESIGN.color.wine}`,
+              paintOrder: "stroke fill",
+              textShadow: `0 3px 0 ${DESIGN.color.paper}, 0 9px 22px ${DESIGN.color.ink}35, 0 16px 38px ${DESIGN.color.champagne}`,
             }}
           >
             TATSUYA <span style={{fontSize: 112, fontWeight: 400}}>&amp;</span> NAMI

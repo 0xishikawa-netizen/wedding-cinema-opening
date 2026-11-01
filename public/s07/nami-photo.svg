@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-label="Nami portrait placeholder">
+  <defs>
+    <linearGradient id="bg" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fff3d6"/><stop offset="1" stop-color="#e8cf93"/>
+    </linearGradient>
+    <linearGradient id="dress" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7a2b3c"/><stop offset="1" stop-color="#3a1f24"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <circle cx="180" cy="180" r="190" fill="#fff3d6" opacity=".65"/>
+  <circle cx="748" cy="840" r="270" fill="#e98a8a" opacity=".18"/>
+  <g fill="none" stroke="#c6a66a" stroke-width="4" opacity=".55"><path d="M70 120h250M580 980h250"/><circle cx="450" cy="520" r="330"/></g>
+  <g fill="url(#dress)">
+    <ellipse cx="450" cy="348" rx="132" ry="158"/>
+    <path d="M315 378c-35-167 44-254 141-249 119 6 178 104 129 299-24-80-75-131-141-139-51-6-94 24-129 89z"/>
+    <path d="M248 1050c20-280 84-450 202-467 118 17 182 187 202 467z"/>
+    <path d="M347 592c25 79 58 119 103 119s78-40 103-119c-15 205-49 341-103 408-54-67-88-203-103-408z" fill="#fff3d6" opacity=".94"/>
+    <path d="M337 641c-89 83-133 212-151 387h96c12-137 44-250 96-336zM563 641c89 83 133 212 151 387h-96c-12-137-44-250-96-336z"/>
+  </g>
+  <g fill="#e98a8a"><circle cx="600" cy="635" r="28"/><circle cx="628" cy="658" r="25"/><circle cx="575" cy="665" r="24"/></g>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <text x="450" y="92" font-size="24" letter-spacing="9" fill="#7a2b3c">REPLACEABLE PHOTO SLOT</text>
+    <text x="450" y="1030" font-size="20" letter-spacing="7" fill="#fff3d6">NAMI / PORTRAIT</text>
+  </g>
+</svg>
